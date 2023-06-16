@@ -565,6 +565,7 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 	background: #2E2F42;
+	margin-right: 24px;
 }
 
 .footer-input::placeholder {
@@ -598,9 +599,9 @@ img {
 	margin-left: 16px;
 }
  
-.footer-sub {
+.footer-field {
 	display: flex;
-	gap: 24px;
+	
 }
 
 .footer-sub-btn:hover, .footer-sub-btn:focus {
