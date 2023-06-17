@@ -559,7 +559,7 @@ img {
 }
 
 .footer-input {
-	min-width: 164px;
+	min-width: 264px;
 	height: 40px;
 	border: 1px solid #FFFFFF;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -599,6 +599,9 @@ img {
 	margin-left: 16px;
 }
  
+.footer-contact {
+	justify-content: flex-end;
+}
 .footer-field {
 	display: flex;
 	
@@ -820,7 +823,7 @@ img {
 }
 
 .modal-field {
-	margin-bottom: 18px;
+	margin-bottom: 24px;
 }
 .modal-input {
 	width: 100%;
@@ -849,13 +852,15 @@ img {
   letter-spacing: 0.04em;
   color: #8E8F99;
 	margin-bottom: 4px;
-	display: inline-block;
+	display: block;
 }
 
 .input-wrap {
 	position: relative;
+	margin-bottom: 16px;
 }
 .input-icon {
+	height: 24px;
 	fill: #2E2F42;
 	position: absolute;
 	left: 16px;
@@ -870,9 +875,17 @@ img {
   border-radius: 4px;  
 	background: transparent;
 	padding: 8px 16px;
-	font-size: 18px;
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.04em;
+	color: rgba(46, 47, 66, 0.4);
 	outline: transparent;
 	resize: none;
+	transition: border-color var(--transition);
+}
+
+.modal-textarea:focus {
+	border-color: #4D5AE5;
 }
 
 .modal-textarea::placeholder {
@@ -892,6 +905,12 @@ img {
 	align-items: center;
 }
 
+.span-privasy {
+	width: 16px;
+	height: 16px;
+	display: inline-flex;
+	transition: background-color var(--transition);
+}
 .check-text span {
 	width: 20px;
 	height: 20px;
@@ -913,6 +932,7 @@ img {
 	background-color: #404BBF;
 	border: 1px solid #404BBF;
   border-radius: 2px;
+	border: none;
 	fill: #F4F4FD;
 }
 
@@ -920,26 +940,21 @@ img {
 	border-color: #404BBF;
 }
 
-.send-btn {
-	position: relative;
-}
 .modal-send-btn {
-	
+	font-family: "Roboto";
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
 	min-width: 169px;
 	height: 56px;
 	letter-spacing: 0.04em;
-	
 	color: #FFFFFF;
-
-	
 	display: block;
   margin: auto;
 	background-color: #4D5AE5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+	border: none;
 	border-color: transparent;
 	cursor: pointer;
 	transition: background-color var(--transition);
