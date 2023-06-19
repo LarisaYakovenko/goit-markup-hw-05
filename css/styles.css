@@ -832,8 +832,12 @@ img {
 }
 
 .modal-field {
-	margin-bottom: 16px;
+	margin-bottom: 8px;
 
+}
+
+.checkbox-wrapper {
+	margin-bottom: 24px; 
 }
 .modal-input {
 	width: 100%;
@@ -911,7 +915,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8E8F99;
-	display: flex;
 	align-items: center;
 }
 
@@ -926,7 +929,7 @@ img {
 	align-items: center;
 	justify-content: center;
 	fill: transparent;
-	transition: background-color var(--transition),  border var(--transition) fill var(--transition) ;
+	transition: background-color var(--transition),  border var(--transition), fill var(--transition) ;
 }
 
 .check-text a {
