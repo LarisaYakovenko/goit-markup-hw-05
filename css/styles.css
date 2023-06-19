@@ -926,7 +926,7 @@ img {
 	align-items: center;
 	justify-content: center;
 	fill: transparent;
-	transition: background-color var(--transition);
+	transition: background-color var(--transition),  border var(--transition) fill var(--transition) ;
 }
 
 .check-text a {
